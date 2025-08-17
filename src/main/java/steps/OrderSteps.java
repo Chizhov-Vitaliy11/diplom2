@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_OK;
 
 public class OrderSteps {
-    private static final  String CREATE_ORDER = "/api/orders";
+    private static final String CREATE_ORDER = "/api/orders";
     private static final String INGREDIENTS_LIST = "/api/ingredients";
 
     @Step("Создание заказа")
