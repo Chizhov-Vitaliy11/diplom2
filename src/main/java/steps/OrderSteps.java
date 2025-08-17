@@ -10,8 +10,8 @@ import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_OK;
 
 public class OrderSteps {
-    private final String CREATE_ORDER = "/api/orders";
-    private final String INGREDIENTS_LIST = "/api/ingredients";
+    private final static String CREATE_ORDER = "/api/orders";
+    private final static String INGREDIENTS_LIST = "/api/ingredients";
 
     @Step("Создание заказа")
     public ValidatableResponse createOrder(Order order, String accessToken) {
