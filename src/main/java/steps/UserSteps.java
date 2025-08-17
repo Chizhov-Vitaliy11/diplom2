@@ -8,9 +8,9 @@ import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_ACCEPTED;
 
 public class UserSteps {
-    private final String REGISTER_USER = "/api/auth/register";
-    private final String DELETE_USER = "/api/auth/user";
-    private final String LOGIN_USER = "/api/auth/login";
+    private static final String REGISTER_USER = "/api/auth/register";
+    private static final String DELETE_USER = "/api/auth/user";
+    private static final String LOGIN_USER = "/api/auth/login";
 
     @Step ("Метод создания пользователя")
     public ValidatableResponse createUser(User user) {
